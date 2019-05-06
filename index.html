@@ -31,30 +31,30 @@
 
     <div id="overlay"></div>
     <div class="main">
-            <div id="loginBox" class="loginbox">
-                    <div
-                        class="fb-login-button"
-                        data-width="150"
-                        data-size="large"
-                        data-button-type="continue_with"
-                        data-auto-logout-link="false"
-                        data-use-continue-as="true"
-                        scope="public_profile,email,user_birthday" 
-                        onlogin="checkLoginState();"
-                    ></div>
-                    <h1>Sign in</h1><br>
-                    <form>
-                        <input type="text" placeholder="Username"><br>
-                        <input type="password" placeholder="Password">
-                        <input type="submit" value="LOGIN">
-                    </form>
-                    <a href="#">Forgot Password?</a><br>
-                    <span id="text-account">Don't have an account?</span><a id="create-account" href="#"> Create here.</a>
-                </div>
+      <div id="loginBox" class="loginbox">
+        <div
+          class="fb-login-button"
+          data-width="150"
+          data-size="large"
+          data-button-type="continue_with"
+          data-auto-logout-link="false"
+          data-use-continue-as="true"
+          scope="public_profile,email,user_birthday"
+          onlogin="checkLoginState();"
+        ></div>
+        <h1>Sign in</h1>
+        <br />
+        <form>
+          <input type="text" placeholder="Username" /><br />
+          <input type="password" placeholder="Password" />
+          <input type="submit" value="LOGIN" />
+        </form>
+        <a href="#">Forgot Password?</a><br />
+        <span id="text-account">Don't have an account?</span
+        ><a id="create-account" href="#"> Create here.</a>
+      </div>
     </div>
-    
 
-    
     <script src="" async defer></script>
 
     <!-- FACEBOOK JAVASCIRPT SDK -->
@@ -68,7 +68,7 @@
         });
 
         FB.getLoginStatus(function(response) {
-            statusChangeCallback(response);
+          statusChangeCallback(response);
         });
       };
 
@@ -86,8 +86,10 @@
 
       function statusChangeCallback(response) {
         if (response.status === "connected") {
+          setElements(true);
           console.log("logged in and authenticated");
         } else {
+          setElements(false);
           console.log("Not authenticated");
         }
       }
@@ -99,6 +101,7 @@
         });
       }
     </script>
+    <script src="./js/main.js" async defer></script>
 
     <!-- <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
     </fb:login-button> -->
