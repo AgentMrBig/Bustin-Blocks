@@ -31,7 +31,7 @@
 
     <div id="overlay"></div>
     <div class="main">
-            <div class="loginbox">
+            <div id="loginBox" class="loginbox">
                     <div
                         class="fb-login-button"
                         data-width="150"
@@ -95,6 +95,7 @@
       function checkLoginState() {
         FB.getLoginStatus(function(response) {
           statusChangeCallback(response);
+          console.log(response.status);
         });
       }
     </script>
