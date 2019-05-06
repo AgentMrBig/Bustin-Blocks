@@ -36,6 +36,8 @@
       data-button-type="continue_with"
       data-auto-logout-link="false"
       data-use-continue-as="true"
+      scope="public_profile,email" 
+      onlogin="checkLoginState();"
     ></div>
     <script src="" async defer></script>
 
@@ -81,7 +83,7 @@
       }
     </script>
 
-    <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-    </fb:login-button>
+    <!-- <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+    </fb:login-button> -->
   </body>
 </html>
