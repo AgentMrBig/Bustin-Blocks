@@ -35,8 +35,11 @@
     <!-- START Login Form -->
     <div id="overlay"></div>
     <div class="main">
+
+      <canvas id="gameScreen" width="800" hight="600"></canvas>
       <div id="loginBox" class="loginbox">
         <div
+          id="fbLogin"
           class="fb-login-button"
           data-width="150"
           data-size="large"
@@ -107,6 +110,7 @@
       }
     </script>
     <script src="./js/main.js" async defer></script>
+    <script src="./js/game.js" async defer></script>
 
     <!-- <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
     </fb:login-button> -->
