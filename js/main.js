@@ -1,20 +1,25 @@
 /**-------------------------------------------------------------
  *  Initialization
  * -------------------------------------------------------------
- */
+ *//////////////////////////////////////////////////////////////
+
 // init on dom load
 document.addEventListener('DOMContentLoaded', init);
 
 // init app
 function init(){
-    const canvas = document.getElementById("gameScreen");
-    const logRegForm = document.getElementById('loginBox');
+    // const canvas = document.getElementById("gameScreen");
+    // const logRegForm = document.getElementById('loginBox');
 }
 
 /**-------------------------------------------------------------
- *  FACEBOOK 
+ *  FACEBOOK START
  * -------------------------------------------------------------
- */
+ *//////////////////////////////////////////////////////////////
+
+// FB init
+
+
 // hide login form if logged in
 function setElements(isLoggedIn){
     if(isLoggedIn){
