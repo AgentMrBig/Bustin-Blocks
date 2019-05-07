@@ -22,18 +22,24 @@
   border-radius: 3%;
   box-shadow: 8px 8px 50px #000;
   display: flexbox;
+  justify-content: center;
   #create-account: hover;
   #create-account-text-decoration: underline;
   #create-account-font-weight: bold;
 }
 .loginbox .fb-login-button {
+  margin: auto;
   margin-top: 40px;
   margin-bottom: 40px;
   align-self: center;
-  margin-left: 10px;
   -webkit-box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.75);
+}
+.loginbox .logout {
+  display: flexbox;
+  justify-content: center;
+  align-self: center;
 }
 .loginbox h1 {
   color: #fff;
